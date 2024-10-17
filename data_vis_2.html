@@ -34,47 +34,48 @@
 
   <script type="text/javascript">
     // Load the TopoJSON file and CSV data
-    const topojsonUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/aus_states.topojson';  
+    const topojsonUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/states.topojson';  
     const csvUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/agri_commodity_data.csv';  
   
     // Choropleth Map
     vegaEmbed('#choropleth_map', {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "width": 600,
-      "height": 400,
-      "data": {
-        "url": topojsonUrl,  // Use the topojsonUrl variable
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "width": 600,
+        "height": 400,
+        "data": {
+        "url": topojsonUrl,
         "format": {
-          "type": "topojson",
-          "feature": "collection"
+            "type": "topojson",
+            "feature": "states"  // Use the "states" feature
         }
-      },
-      "projection": {"type": "mercator"},
-      "transform": [
+        },
+        "projection": {"type": "mercator"},
+        "transform": [
         {
-          "lookup": "properties.NAME",  // "NAME" field in the TopoJSON
-          "from": {
+            "lookup": "properties.STATE_NAME",  // Match the "STATE_NAME" field in TopoJSON
+            "from": {
             "data": {
-              "url": csvUrl,  // Use the csvUrl variable
-              "format": {"type": "csv"}
+                "url": csvUrl,  // Use the CSV data
+                "format": {"type": "csv"}
             },
-            "key": "Region label",  // This should be the corresponding field in your CSV that matches the TopoJSON NAME field
+            "key": "Region label",  // Match the "Region label" field in your CSV
             "fields": ["Gross value ($)"]  // The field from your CSV that contains the values to visualize
-          }
+            }
         }
-      ],
-      "mark": "geoshape",
-      "encoding": {
+        
+        ],
+        "mark": "geoshape",
+        "encoding": {
         "color": {
-          "field": "Gross value ($)",
-          "type": "quantitative",
-          "scale": {"scheme": "blues"}
+            "field": "Gross value ($)",
+            "type": "quantitative",
+            "scale": {"scheme": "blues"}
         },
         "tooltip": [
-          {"field": "properties.NAME", "type": "nominal", "title": "Region"},
-          {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
+            {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
+            {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
         ]
-      }
+        }
     });
   
     // Heatmap
