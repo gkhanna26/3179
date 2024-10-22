@@ -35,7 +35,8 @@
   <script type="text/javascript">
     // Load the TopoJSON file and CSV data
     const topojsonUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/states.topojson';  
-    const csvUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/agri_commodity_data.csv';  
+    const csvUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/agri_commodity_data.csv';
+    const csvUrl_2 = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_sums.csv';  
   
     // Choropleth Map
     vegaEmbed('#choropleth_map', {
@@ -55,7 +56,7 @@
             "lookup": "properties.STATE_NAME",  // Match the "STATE_NAME" field in TopoJSON
             "from": {
             "data": {
-                "url": csvUrl,  // Use the CSV data
+                "url": csvUrl_2,  // Use the CSV data
                 "format": {"type": "csv"}
             },
             "key": "Region label",  // Match the "Region label" field in your CSV
@@ -90,7 +91,7 @@
       "height": 400,
       "encoding": {
         "x": {"field": "Region label", "type": "nominal", "title": "State"},
-        "y": {"field": "Commodity description", "type": "nominal", "title": "Commodity"},
+        "y": {"field": "Category", "type": "nominal", "title": "Commodity Category"},
         "color": {"field": "Gross value ($)", "type": "quantitative", "scale": {"scheme": "viridis"}}
       }
     });
@@ -99,7 +100,7 @@
     vegaEmbed('#pie_chart', {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
       "data": {
-        "url": csvUrl,  // Use the csvUrl variable
+        "url": csvUrl_2,  // Use the csvUrl variable
         "format": {"type": "csv"}
       },
       "mark": {"type": "arc", "outerRadius": 100},
