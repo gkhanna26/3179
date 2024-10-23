@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 800,
+    "data": {
+    "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/states.topojson",
+    "format": {
+        "type": "topojson",
+        "feature": "states"  
+    }
+    },
+    "projection": {"type": "mercator"},
+    "transform": [
+    {
+        "lookup": "properties.STATE_NAME",  
+        "from": {
+        "data": {
+            "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_sums.csv",  
+            "format": {"type": "csv"}
+        },
+        "key": "Region label",  
+        "fields": ["Gross value ($)"]  
+        }
+    }
+    
+    ],
+    "mark": "geoshape",
+    "encoding": {
+    "color": {
+        "field": "Gross value ($)",
+        "type": "quantitative",
+        "scale": {
+            "domain": [0, 30000000000],  
+            "range": ["#8c510a", "#f5f5f5", "#01665e"]
+        }
+    },
+    "tooltip": [
+        {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
+        {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
+    ]
+    },
+    "config": {
+      "autosize": {"type": "fit", "contains": "padding"}
+    }
+}

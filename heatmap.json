@@ -1,0 +1,18 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_sums.csv",  
+      "format": {"type": "csv"}
+    },
+    "mark": "rect",
+    "width": "container",
+    "height": 300,
+    "encoding": {
+      "x": {"field": "Region label", "type": "nominal", "title": "State"},
+      "y": {"field": "Category", "type": "nominal", "title": "Commodity Category"},
+      "color": {"field": "Gross value ($)", "type": "quantitative", "scale": {"scheme": "viridis"}}
+    },
+    "config": {
+    "autosize": {"type": "fit", "contains": "padding"}
+  }
+}

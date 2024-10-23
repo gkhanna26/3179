@@ -1,159 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Australian Agricultural Output by State 2020-21</title>
-  <!-- Vega-Lite and Vega Embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Agricultural Output Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
-  <h1>Australian Agricultural Output by State 2020-21</h1>
-
-  <!-- Choropleth Map -->
-  <h2>Choropleth Map: Overall Agricultural Output by State</h2>
-  <div id="choropleth_map"></div>
-
-  <!-- Heatmap for Commodities by State -->
-  <h2>Heatmap: Value of Each Commodity by State</h2>
-  <div id="heatmap"></div>
-
-  <!-- Pie Chart: State's Contribution to the National Economy -->
-  <h2>Pie Chart: State Contribution to National Agricultural Economy</h2>
-  <div id="pie_chart"></div>
-
-  <!-- Pictogram Chart -->
-  <h2>Pictogram Chart: Commodity Value by State</h2>
-  <div id="pictogram_chart"></div>
-
-  <!-- Bubble Chart: Commodity Value by State -->
-  <h2>Bubble Chart: Commodity Value by State</h2>
-  <div id="bubble_chart"></div>
-
-  <script type="text/javascript">
-    // Load the TopoJSON file and CSV data
-    const topojsonUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/states.topojson';  
-    const csvUrl = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/agri_commodity_data.csv';
-    const csvUrl_2 = 'https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_sums.csv';  
-  
-    // Choropleth Map
-    vegaEmbed('#choropleth_map', {
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-        "width": 600,
-        "height": 400,
-        "data": {
-        "url": topojsonUrl,
-        "format": {
-            "type": "topojson",
-            "feature": "states"  // Use the "states" feature
-        }
-        },
-        "projection": {"type": "mercator"},
-        "transform": [
-        {
-            "lookup": "properties.STATE_NAME",  // Match the "STATE_NAME" field in TopoJSON
-            "from": {
-            "data": {
-                "url": csvUrl_2,  // Use the CSV data
-                "format": {"type": "csv"}
-            },
-            "key": "Region label",  // Match the "Region label" field in your CSV
-            "fields": ["Gross value ($)"]  // The field from your CSV that contains the values to visualize
-            }
-        }
+    <div class="container">
+        <h1>Australian Agricultural Output 2020-21</h1>
+        <div class="text-section"> 
+            <p>Introduction text explaining the visualization and setting the scene.</p>
+        </div>
         
-        ],
-        "mark": "geoshape",
-        "encoding": {
-        "color": {
-            "field": "Gross value ($)",
-            "type": "quantitative",
-            "scale": {"scheme": "blues"}
-        },
-        "tooltip": [
-            {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
-            {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
-        ]
-        }
-    });
-  
-    // Heatmap
-    vegaEmbed('#heatmap', {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "data": {
-        "url": csvUrl,  // Use the csvUrl variable
-        "format": {"type": "csv"}
-      },
-      "mark": "rect",
-      "width": 600,
-      "height": 400,
-      "encoding": {
-        "x": {"field": "Region label", "type": "nominal", "title": "State"},
-        "y": {"field": "Category", "type": "nominal", "title": "Commodity Category"},
-        "color": {"field": "Gross value ($)", "type": "quantitative", "scale": {"scheme": "viridis"}}
-      }
-    });
-  
-    // Pie Chart
-    vegaEmbed('#pie_chart', {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "data": {
-        "url": csvUrl_2,  // Use the csvUrl variable
-        "format": {"type": "csv"}
-      },
-      "mark": {"type": "arc", "outerRadius": 100},
-      "encoding": {
-        "theta": {"field": "Gross value ($)", "type": "quantitative"},
-        "color": {"field": "Region label", "type": "nominal"},
-        "tooltip": [
-          {"field": "Region label", "type": "nominal", "title": "State"},
-          {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
-        ]
-      },
-      "view": {"stroke": null}
-    });
-  
-    // Pictogram Chart (Vertical stacked symbols)
-    vegaEmbed('#pictogram_chart', {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "data": {
-        "url": csvUrl,  // Use the csvUrl variable
-        "format": {"type": "csv"}
-      },
-      "mark": "point",  // Use 'point' as a placeholder for symbols
-      "encoding": {
-        "x": {"field": "Region label", "type": "nominal", "title": "State"},
-        "y": {"field": "Gross value ($)", "type": "quantitative", "title": "Value"},
-        "shape": {"value": "circle"},  // You can replace this with custom icons via HTML/CSS
-        "color": {"field": "Commodity description", "type": "nominal"}
-      }
-    });
-  
-    // Bubble Chart
-    vegaEmbed('#bubble_chart', {
-      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-      "data": {
-        "url": csvUrl,  // Use the csvUrl variable
-        "format": {"type": "csv"}
-      },
-      "mark": "circle",
-      "width": 600,
-      "height": 400,
-      "encoding": {
-        "x": {"field": "Region label", "type": "nominal", "title": "State"},
-        "y": {"field": "Commodity description", "type": "nominal", "title": "Commodity"},
-        "size": {"field": "Gross value ($)", "type": "quantitative"},
-        "color": {"field": "Commodity description", "type": "nominal"},
-        "tooltip": [
-          {"field": "Region label", "type": "nominal", "title": "State"},
-          {"field": "Commodity description", "type": "nominal", "title": "Commodity"},
-          {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
-        ]
-      }
-    });
-  </script>
-  
+        <div class="section">
+            <h2>Total Agricultural Output by State</h2>
+            <div id="choropleth_map" class="chart"></div>
+            <div class="text-section"> 
+                <p>Information about the map and what it shows.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contribution by State</h2>
+            <div class="text-section"> 
+                <p>Text about how each state contributes to the agricultural economy.</p>
+            </div>
+            <div class="grid">
+                <div id="heatmap" class="half-chart"></div>
+                <div id="pie_chart" class="half-chart"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Specific Commodity Output</h2>
+            <div class="text-section">
+                <p>Details about different commodity outputs and their impact.</p>
+            </div>
+            <div class="grid">
+                <div id="pictogram_chart" class="half-chart"></div>
+                <div id="bubble_chart" class="half-chart"></div>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <p>Conclusion and metadata information.</p>
+        </div>
+    </div>
+    
+    <!-- Embed each JSON file directly -->
+    <script>
+        // Embed the choropleth map
+        vegaEmbed('#choropleth_map', 'choropleth_map.json').catch(console.error);
+
+        // Embed the heatmap
+        vegaEmbed('#heatmap', 'heatmap.json').catch(console.error);
+
+        // Embed the pie chart
+        vegaEmbed('#pie_chart', 'pie_chart.json').catch(console.error);
+
+        // Embed the pictogram chart
+        vegaEmbed('#pictogram_chart', 'pictogram.json').catch(console.error);
+
+        // Embed the bubble chart
+        vegaEmbed('#bubble_chart', 'bubble_chart.json').catch(console.error);
+    </script>
 </body>
 </html>
+
