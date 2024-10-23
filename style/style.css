@@ -48,6 +48,15 @@ h1, h2 {
     gap: 10px;
 }
 
+.metadata {
+    font-size: 0.8em; 
+    font-style: italic; 
+    margin-top: 20px; 
+    text-align:justify; 
+    color: #555; 
+}
+
+
 @media (max-width: 768px) {
     .half-chart {
         width: 100%;
