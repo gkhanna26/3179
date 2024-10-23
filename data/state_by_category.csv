@@ -1,52 +1,45 @@
 ,Region label,Category,Gross value ($)
 0,Australian Capital Territory,Fruit and nuts ,51254.4
-1,Australian Capital Territory,Livestock Products ,2891277.39
-2,Australian Capital Territory,Livestock products ,343888.15
-3,Australian Capital Territory,Livestock slaughtered and other disposals ,8781715.82
-4,Australian Capital Territory,"Nurseries, cut flowers or cultivated turf ",1660081.87
-5,New South Wales,Broadacre crops ,10414438941.48
-6,New South Wales,Fruit and nuts ,650024390.18
-7,New South Wales,Livestock Products ,1102863645.26
-8,New South Wales,Livestock products ,1001192492.17
-9,New South Wales,Livestock slaughtered and other disposals ,5891059804.85
-10,New South Wales,"Nurseries, cut flowers or cultivated turf ",236922992.27
-11,New South Wales,Vegetables for human consumption ,25081371.45
-12,Northern Territory,Broadacre crops ,17571856.169999998
-13,Northern Territory,Fruit and nuts ,5486124.26
-14,Northern Territory,Livestock slaughtered and other disposals ,487055064.64
-15,Northern Territory,"Nurseries, cut flowers or cultivated turf ",3214833.96
-16,Queensland,Broadacre crops ,4130611806.6200004
-17,Queensland,Fruit and nuts ,559092839.1700001
-18,Queensland,Livestock Products ,76461420.83
-19,Queensland,Livestock products ,537252705.5699999
-20,Queensland,Livestock slaughtered and other disposals ,7939413384.139999
-21,Queensland,"Nurseries, cut flowers or cultivated turf ",92182019.3
-22,Queensland,Vegetables for human consumption ,97082326.0
-23,South Australia,Broadacre crops ,2780224055.21
-24,South Australia,Fruit and nuts ,951528209.54
-25,South Australia,Livestock Products ,444560560.09
-26,South Australia,Livestock products ,330560945.28
-27,South Australia,Livestock slaughtered and other disposals ,1159460151.43
-28,South Australia,"Nurseries, cut flowers or cultivated turf ",42424288.33
-29,South Australia,Vegetables for human consumption ,193263508.02
-30,Tasmania,Broadacre crops ,41526536.54
-31,Tasmania,Fruit and nuts ,92093923.99
-32,Tasmania,Livestock Products ,73542479.25
-33,Tasmania,Livestock products ,521516196.07
-34,Tasmania,Livestock slaughtered and other disposals ,525257414.95000005
-35,Tasmania,"Nurseries, cut flowers or cultivated turf ",39174770.46
-36,Tasmania,Vegetables for human consumption ,151130773.73
-37,Victoria,Broadacre crops ,3516695965.0699997
-38,Victoria,Fruit and nuts ,955603044.1899999
-39,Victoria,Livestock Products ,874396016.17
-40,Victoria,Livestock products ,3193787924.92
-41,Victoria,Livestock slaughtered and other disposals ,6336953039.12
-42,Victoria,"Nurseries, cut flowers or cultivated turf ",324263993.59
-43,Victoria,Vegetables for human consumption ,137933576.64
-44,Western Australia,Broadacre crops ,9982309010.900002
-45,Western Australia,Fruit and nuts ,196541421.88
-46,Western Australia,Livestock Products ,654866757.13
-47,Western Australia,Livestock products ,254589035.10999998
-48,Western Australia,Livestock slaughtered and other disposals ,1726358886.6499999
-49,Western Australia,"Nurseries, cut flowers or cultivated turf ",42741965.54
-50,Western Australia,Vegetables for human consumption ,94806538.15
+1,Australian Capital Territory,Livestock Products ,3235165.54
+2,Australian Capital Territory,Livestock slaughtered and other disposals ,8781715.82
+3,Australian Capital Territory,"Nurseries, cut flowers or cultivated turf ",1660081.87
+4,New South Wales,Broadacre crops ,10414438941.48
+5,New South Wales,Fruit and nuts ,650024390.18
+6,New South Wales,Livestock Products ,2104056137.4299998
+7,New South Wales,Livestock slaughtered and other disposals ,5891059804.85
+8,New South Wales,"Nurseries, cut flowers or cultivated turf ",236922992.27
+9,New South Wales,Vegetables for human consumption ,25081371.45
+10,Northern Territory,Broadacre crops ,17571856.169999998
+11,Northern Territory,Fruit and nuts ,5486124.26
+12,Northern Territory,Livestock slaughtered and other disposals ,487055064.64
+13,Northern Territory,"Nurseries, cut flowers or cultivated turf ",3214833.96
+14,Queensland,Broadacre crops ,4130611806.6200004
+15,Queensland,Fruit and nuts ,559092839.1700001
+16,Queensland,Livestock Products ,613714126.4
+17,Queensland,Livestock slaughtered and other disposals ,7939413384.139999
+18,Queensland,"Nurseries, cut flowers or cultivated turf ",92182019.3
+19,Queensland,Vegetables for human consumption ,97082326.0
+20,South Australia,Broadacre crops ,2780224055.21
+21,South Australia,Fruit and nuts ,951528209.54
+22,South Australia,Livestock Products ,775121505.37
+23,South Australia,Livestock slaughtered and other disposals ,1159460151.43
+24,South Australia,"Nurseries, cut flowers or cultivated turf ",42424288.33
+25,South Australia,Vegetables for human consumption ,193263508.02
+26,Tasmania,Broadacre crops ,41526536.54
+27,Tasmania,Fruit and nuts ,92093923.99
+28,Tasmania,Livestock Products ,595058675.32
+29,Tasmania,Livestock slaughtered and other disposals ,525257414.95000005
+30,Tasmania,"Nurseries, cut flowers or cultivated turf ",39174770.46
+31,Tasmania,Vegetables for human consumption ,151130773.73
+32,Victoria,Broadacre crops ,3516695965.0699997
+33,Victoria,Fruit and nuts ,955603044.1899999
+34,Victoria,Livestock Products ,4068183941.09
+35,Victoria,Livestock slaughtered and other disposals ,6336953039.12
+36,Victoria,"Nurseries, cut flowers or cultivated turf ",324263993.59
+37,Victoria,Vegetables for human consumption ,137933576.64
+38,Western Australia,Broadacre crops ,9982309010.900002
+39,Western Australia,Fruit and nuts ,196541421.88
+40,Western Australia,Livestock Products ,909455792.24
+41,Western Australia,Livestock slaughtered and other disposals ,1726358886.6499999
+42,Western Australia,"Nurseries, cut flowers or cultivated turf ",42741965.54
+43,Western Australia,Vegetables for human consumption ,94806538.15

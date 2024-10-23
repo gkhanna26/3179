@@ -15,10 +15,10 @@ Australia,Fruit and nuts - Other fruit - Bananas,536167439.63,Fruit and nuts
 Australia,Fruit and nuts - Nuts - Almonds,792724824.96,Fruit and nuts 
 Australia,Fruit and nuts - Grapes - Wine production,852559874.65,Fruit and nuts 
 Australia,Vegetables for human consumption - Potatoes - Fresh market and processing,699298093.99,Vegetables for human consumption 
-Australia,Livestock products - Total,9068825343.39,Livestock products 
+Australia,Livestock Products - Total,9068825343.39,Livestock Products 
 Australia,Livestock Products - Wool,3229582156.11,Livestock Products 
-Australia,Livestock products - Milk,4871891868.33,Livestock products 
-Australia,Livestock products - Eggs,967351318.94,Livestock products 
+Australia,Livestock Products - Milk,4871891868.33,Livestock Products 
+Australia,Livestock Products - Eggs,967351318.94,Livestock Products 
 Australia,Livestock slaughtered and other disposals - Total,25272038981.91,Livestock slaughtered and other disposals 
 Australia,Livestock slaughtered and other disposals - Sheep and lambs,4930181272.68,Livestock slaughtered and other disposals 
 Australia,Livestock slaughtered and other disposals - Cattle and calves,15321409870.86,Livestock slaughtered and other disposals 
@@ -41,10 +41,10 @@ New South Wales,Fruit and nuts - Other fruit - Bananas,5111541.05,Fruit and nuts
 New South Wales,Fruit and nuts - Nuts - Almonds,176886732.47,Fruit and nuts 
 New South Wales,Fruit and nuts - Grapes - Wine production,139350739.56,Fruit and nuts 
 New South Wales,Vegetables for human consumption - Potatoes - Fresh market and processing,25081371.45,Vegetables for human consumption 
-New South Wales,Livestock products - Total,2104056137.43,Livestock products 
+New South Wales,Livestock Products - Total,2104056137.43,Livestock Products 
 New South Wales,Livestock Products - Wool,1102863645.26,Livestock Products 
-New South Wales,Livestock products - Milk,686884461.67,Livestock products 
-New South Wales,Livestock products - Eggs,314308030.50,Livestock products 
+New South Wales,Livestock Products - Milk,686884461.67,Livestock Products 
+New South Wales,Livestock Products - Eggs,314308030.50,Livestock Products 
 New South Wales,Livestock slaughtered and other disposals - Total,5891059804.85,Livestock slaughtered and other disposals 
 New South Wales,Livestock slaughtered and other disposals - Sheep and lambs,1484794792.16,Livestock slaughtered and other disposals 
 New South Wales,Livestock slaughtered and other disposals - Cattle and calves,3332701900.55,Livestock slaughtered and other disposals 
@@ -64,10 +64,10 @@ Victoria,Fruit and nuts - Pome fruit - Apples,316053635.38,Fruit and nuts
 Victoria,Fruit and nuts - Nuts - Almonds,446104857.53,Fruit and nuts 
 Victoria,Fruit and nuts - Grapes - Wine production,126553447.08,Fruit and nuts 
 Victoria,Vegetables for human consumption - Potatoes - Fresh market and processing,137933576.64,Vegetables for human consumption 
-Victoria,Livestock products - Total,4068183941.10,Livestock products 
+Victoria,Livestock Products - Total,4068183941.10,Livestock Products 
 Victoria,Livestock Products - Wool,874396016.17,Livestock Products 
-Victoria,Livestock products - Milk,3018887744.83,Livestock products 
-Victoria,Livestock products - Eggs,174900180.09,Livestock products 
+Victoria,Livestock Products - Milk,3018887744.83,Livestock Products 
+Victoria,Livestock Products - Eggs,174900180.09,Livestock Products 
 Victoria,Livestock slaughtered and other disposals - Total,6336953039.12,Livestock slaughtered and other disposals 
 Victoria,Livestock slaughtered and other disposals - Sheep and lambs,2157646875.90,Livestock slaughtered and other disposals 
 Victoria,Livestock slaughtered and other disposals - Cattle and calves,2935159170.47,Livestock slaughtered and other disposals 
@@ -89,10 +89,10 @@ Queensland,Fruit and nuts - Pome fruit - Apples,38120146.74,Fruit and nuts
 Queensland,Fruit and nuts - Other fruit - Bananas,514845609.29,Fruit and nuts 
 Queensland,Fruit and nuts - Grapes - Wine production,503157.13,Fruit and nuts 
 Queensland,Vegetables for human consumption - Potatoes - Fresh market and processing,97082326.00,Vegetables for human consumption 
-Queensland,Livestock products - Total,613714126.41,Livestock products 
+Queensland,Livestock Products - Total,613714126.41,Livestock Products 
 Queensland,Livestock Products - Wool,76461420.83,Livestock Products 
-Queensland,Livestock products - Milk,209345738.42,Livestock products 
-Queensland,Livestock products - Eggs,327906967.15,Livestock products 
+Queensland,Livestock Products - Milk,209345738.42,Livestock Products 
+Queensland,Livestock Products - Eggs,327906967.15,Livestock Products 
 Queensland,Livestock slaughtered and other disposals - Total,7939413384.13,Livestock slaughtered and other disposals 
 Queensland,Livestock slaughtered and other disposals - Sheep and lambs,18996319.99,Livestock slaughtered and other disposals 
 Queensland,Livestock slaughtered and other disposals - Cattle and calves,6825592710.83,Livestock slaughtered and other disposals 
@@ -110,10 +110,10 @@ South Australia,Fruit and nuts - Pome fruit - Apples,105167220.63,Fruit and nuts
 South Australia,Fruit and nuts - Nuts - Almonds,164613535.29,Fruit and nuts 
 South Australia,Fruit and nuts - Grapes - Wine production,467813752.63,Fruit and nuts 
 South Australia,Vegetables for human consumption - Potatoes - Fresh market and processing,193263508.02,Vegetables for human consumption 
-South Australia,Livestock products - Total,775121505.37,Livestock products 
+South Australia,Livestock Products - Total,775121505.37,Livestock Products 
 South Australia,Livestock Products - Wool,444560560.09,Livestock Products 
-South Australia,Livestock products - Milk,263173719.79,Livestock products 
-South Australia,Livestock products - Eggs,67387225.49,Livestock products 
+South Australia,Livestock Products - Milk,263173719.79,Livestock Products 
+South Australia,Livestock Products - Eggs,67387225.49,Livestock Products 
 South Australia,Livestock slaughtered and other disposals - Total,1781416895.41,Livestock slaughtered and other disposals 
 South Australia,Livestock slaughtered and other disposals - Sheep and lambs,514552254.10,Livestock slaughtered and other disposals 
 South Australia,Livestock slaughtered and other disposals - Cattle and calves,272012488.12,Livestock slaughtered and other disposals 
@@ -132,10 +132,10 @@ Western Australia,Fruit and nuts - Other fruit - Bananas,10724165.02,Fruit and n
 Western Australia,Fruit and nuts - Nuts - Almonds,5119699.67,Fruit and nuts 
 Western Australia,Fruit and nuts - Grapes - Wine production,75217219.43,Fruit and nuts 
 Western Australia,Vegetables for human consumption - Potatoes - Fresh market and processing,94806538.15,Vegetables for human consumption 
-Western Australia,Livestock products - Total,909455792.23,Livestock products 
+Western Australia,Livestock Products - Total,909455792.23,Livestock Products 
 Western Australia,Livestock Products - Wool,654866757.13,Livestock Products 
-Western Australia,Livestock products - Milk,187827682.57,Livestock products 
-Western Australia,Livestock products - Eggs,66761352.54,Livestock products 
+Western Australia,Livestock Products - Milk,187827682.57,Livestock Products 
+Western Australia,Livestock Products - Eggs,66761352.54,Livestock Products 
 Western Australia,Livestock slaughtered and other disposals - Total,2246830204.16,Livestock slaughtered and other disposals 
 Western Australia,Livestock slaughtered and other disposals - Sheep and lambs,692258263.03,Livestock slaughtered and other disposals 
 Western Australia,Livestock slaughtered and other disposals - Cattle and calves,1029215693.56,Livestock slaughtered and other disposals 
@@ -149,10 +149,10 @@ Tasmania,"Nurseries, cut flowers or cultivated turf - Nurseries - Outdoor",39174
 Tasmania,Fruit and nuts - Pome fruit - Apples,48972365.19,Fruit and nuts 
 Tasmania,Fruit and nuts - Grapes - Wine production,43121558.80,Fruit and nuts 
 Tasmania,Vegetables for human consumption - Potatoes - Fresh market and processing,151130773.73,Vegetables for human consumption 
-Tasmania,Livestock products - Total,595058675.32,Livestock products 
+Tasmania,Livestock Products - Total,595058675.32,Livestock Products 
 Tasmania,Livestock Products - Wool,73542479.25,Livestock Products 
-Tasmania,Livestock products - Milk,505772521.05,Livestock products 
-Tasmania,Livestock products - Eggs,15743675.02,Livestock products 
+Tasmania,Livestock Products - Milk,505772521.05,Livestock Products 
+Tasmania,Livestock Products - Eggs,15743675.02,Livestock Products 
 Tasmania,Livestock slaughtered and other disposals - Total,580528873.78,Livestock slaughtered and other disposals 
 Tasmania,Livestock slaughtered and other disposals - Sheep and lambs,58040897.98,Livestock slaughtered and other disposals 
 Tasmania,Livestock slaughtered and other disposals - Cattle and calves,467216516.97,Livestock slaughtered and other disposals 
@@ -167,9 +167,9 @@ Northern Territory,Livestock slaughtered and other disposals - Other n.e.c.,3128
 Australian Capital Territory,Hay - Total,28762.34,Hay 
 Australian Capital Territory,"Nurseries, cut flowers or cultivated turf - Nurseries - Outdoor",1660081.87,"Nurseries, cut flowers or cultivated turf "
 Australian Capital Territory,Fruit and nuts - Pome fruit - Apples,51254.40,Fruit and nuts 
-Australian Capital Territory,Livestock products - Total,3235165.53,Livestock products 
+Australian Capital Territory,Livestock Products - Total,3235165.53,Livestock Products 
 Australian Capital Territory,Livestock Products - Wool,2891277.39,Livestock Products 
-Australian Capital Territory,Livestock products - Eggs,343888.15,Livestock products 
+Australian Capital Territory,Livestock Products - Eggs,343888.15,Livestock Products 
 Australian Capital Territory,Livestock slaughtered and other disposals - Total,8781715.82,Livestock slaughtered and other disposals 
 Australian Capital Territory,Livestock slaughtered and other disposals - Sheep and lambs,3891869.52,Livestock slaughtered and other disposals 
 Australian Capital Territory,Livestock slaughtered and other disposals - Cattle and calves,3737245.72,Livestock slaughtered and other disposals 
