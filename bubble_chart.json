@@ -1,5 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": "Overall Comparison of Gross Values by Commodity by State",
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "anchor": "middle", 
+    "color": "#333"
+    },
     "data": {
       "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_by_category.csv",
       "format": {"type": "csv"}

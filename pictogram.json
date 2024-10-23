@@ -1,5 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Production of Selected Commodities by State",
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "anchor": "middle", 
+    "color": "#333"
+    },
   "width": "container",
   "height": 450,
   "data": {

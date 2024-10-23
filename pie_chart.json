@@ -1,5 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": "Pie Chart of Value Contribution by State",
+    "fontSize": 18,
+    "fontWeight": "bold",
+    "anchor": "middle", 
+    "color": "#333"
+    },
     "width": "container",
     "height": 500,
     "data": {
