@@ -8,7 +8,7 @@
     "color": "#333"
     },
     "width": "container",
-    "height": 500,
+    "height": "container",
     "data": {
       "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_sums.csv",  
       "format": {"type": "csv"}

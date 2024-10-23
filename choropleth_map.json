@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
-    "height": 800,
+    "height": "container",
     "data": {
     "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/states.topojson",
     "format": {
