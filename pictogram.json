@@ -1,18 +1,73 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container",
-    "height": 400,
-    "data": {
-      "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/agri_commodity_data.csv"  
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_by_category.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.Category == categoryFilter"
     },
-    "mark": "point", 
-    "encoding": {
-      "x": {"field": "Region label", "type": "nominal", "title": "State"},
-      "y": {"field": "Gross value ($)", "type": "quantitative", "title": "Value"},
-      "shape": {"value": "circle"},  
-      "color": {"field": "Commodity description", "type": "nominal"}
+    {
+      "calculate": "floor(datum['Gross value ($)'])",
+      "as": "emoji_count"
     },
-    "config": {
+    {
+      "filter": "datum.emoji_count != 0"
+    },
+    {
+      "calculate": "{'Fruit and nuts ': '🍇', 'Broadacre crops ': '🌽', 'Vegetables for human consumption ': '🥦', 'Livestock Products ': '🥚', 'Livestock slaughtered and other disposals ': '🍖', 'Nurseries, cut flowers or cultivated turf ': '🌻'}[datum.Category]",
+      "as": "emoji"
+    }
+  ],
+  "mark": {"type": "text", "baseline": "middle", "align": "center"},
+  "encoding": {
+    "x": {"field": "Region label", "type": "nominal", "title": "State", "axis": {
+        "labelAngle": -45,
+        "labelAlign": "right",
+        "labelBaseline": "middle"
+      }},
+    "y": {"field": "emoji_count", "type": "quantitative", "title": "Gross Value ($)"},
+    "text": {"field": "emoji", "type": "nominal"},
+    "size": {"value": 50},
+    "color": {"field": "Region label", "type": "nominal", "legend": null},
+    "tooltip": [
+      {"field": "Region label", "type": "nominal", "title": "State"},
+      {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
+    ]
+  },
+  "params": [
+    {
+      "name": "categoryFilter",
+      "value": "Fruit and nuts ",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Fruit and nuts ",
+          "Broadacre crops ",
+          "Vegetables for human consumption ",
+          "Livestock Products ",
+          "Livestock slaughtered and other disposals ",
+          "Nurseries, cut flowers or cultivated turf "
+        ],
+        "labels": [
+          "Fruit and Nuts",
+          "Broadacre Crops",
+          "Vegetables",
+          "Livestock Products",
+          "Livestock Slaughtered and Disposals",
+          "Nurseries, Cut Flowers, Turf"
+        ],
+        "name": "Select Commodity Type: "
+      }
+    }
+  ],
+  "config": {
     "autosize": {"type": "fit", "contains": "padding"}
   }
 }
+
+
+

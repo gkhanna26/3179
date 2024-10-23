@@ -31,7 +31,7 @@
         "type": "quantitative",
         "scale": {
             "domain": [0, 20000000000],  
-            "range": ["#8c510a", "#f5f5f5", "#01665e"]
+            "range": ["#8c510a", "#DAA520", "#01665e"]
         }
     },
     "tooltip": [

@@ -1,20 +1,20 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/agri_commodity_data.csv",
+      "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_by_category.csv",
       "format": {"type": "csv"}
     },
     "mark": "circle",
     "width": "container",
-    "height": 400,
+    "height": 500,
     "encoding": {
       "x": {"field": "Region label", "type": "nominal", "title": "State"},
-      "y": {"field": "Commodity description", "type": "nominal", "title": "Commodity"},
+      "y": {"field": "Category", "type": "nominal", "title": "Commodity"},
       "size": {"field": "Gross value ($)", "type": "quantitative"},
-      "color": {"field": "Commodity description", "type": "nominal"},
+      "color": {"field": "Category", "type": "nominal"},
       "tooltip": [
         {"field": "Region label", "type": "nominal", "title": "State"},
-        {"field": "Commodity description", "type": "nominal", "title": "Commodity"},
+        {"field": "Category", "type": "nominal", "title": "Commodity"},
         {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
       ]
     },

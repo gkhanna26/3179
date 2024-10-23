@@ -1,12 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
-    "height": 300,
+    "height": 500,
     "data": {
       "url": "https://raw.githubusercontent.com/gkhanna26/3179/refs/heads/main/data/state_sums.csv",  
       "format": {"type": "csv"}
     },
-    "mark": {"type": "arc", "outerRadius": 100},
+    "mark": {"type": "arc", "outerRadius": 175},
     "encoding": {
       "theta": {"field": "Gross value ($)", "type": "quantitative"},
       "color": {"field": "Region label", "type": "nominal"},
