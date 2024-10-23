@@ -35,7 +35,7 @@
     "color": {"field": "Region label", "type": "nominal", "legend": null},
     "tooltip": [
       {"field": "Region label", "type": "nominal", "title": "State"},
-      {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
+      {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value", "format": "$,"}
     ]
   },
   "params": [

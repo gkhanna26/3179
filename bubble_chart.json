@@ -15,7 +15,7 @@
       "tooltip": [
         {"field": "Region label", "type": "nominal", "title": "State"},
         {"field": "Category", "type": "nominal", "title": "Commodity"},
-        {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
+        {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value", "format": "$,"}
       ]
     },
     "config": {

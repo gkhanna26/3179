@@ -36,7 +36,7 @@
     },
     "tooltip": [
         {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
-        {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value"}
+        {"field": "Gross value ($)", "type": "quantitative", "title": "Gross Value", "format": "$,"}
     ]
     },
     "config": {
