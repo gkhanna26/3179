@@ -30,7 +30,7 @@
         "field": "Gross value ($)",
         "type": "quantitative",
         "scale": {
-            "domain": [0, 30000000000],  
+            "domain": [0, 20000000000],  
             "range": ["#8c510a", "#f5f5f5", "#01665e"]
         }
     },
